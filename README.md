@@ -1,0 +1,2 @@
+# Foodie
+use npm install 
