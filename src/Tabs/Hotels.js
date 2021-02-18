@@ -28,7 +28,7 @@ export default class Hotels extends Component {
     
     return (
      <TouchableOpacity 
-    // onPress={() =>this.props.navigation.navigate('Chatscreen')}
+    onPress={() =>this.props.navigation.navigate('Hoteldetails')}
     >
     <View style={styles.contentContainer}>
     <View style={styles.viewstyle}>

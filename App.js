@@ -14,6 +14,7 @@ import Subscribe from './src/Subscribe';
 import Signin from './src/Signin';
 import Forgot from './src/Forgot';
 import Splashscreen from './src/Splashscreen';
+import Hoteldetails from "./src/Tabs/Hoteldetails";
 import { NavigationContainer } from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
@@ -41,6 +42,7 @@ export default class app extends Component {
           <Drawer.Screen name="Forgot" component={Forgot}/>
           <Drawer.Screen name="Login" component={Login}/>
           <Drawer.Screen name="Splashscreen" component={Splashscreen}/>
+          <Drawer.Screen name="Hoteldetails" component={Hoteldetails}/>
           </Drawer.Navigator>
       </NavigationContainer>
     );
