@@ -28,7 +28,8 @@ export default class Hoteldetails extends Component
                  <Text style={styles.text1}>0.0</Text>
                </View>
                <View style={styles.resname}>
-                 <Text style={styles.text2}>Sahana</Text>
+               <Icon1 style={styles.cart} name='shopping-cart' size={15} color='white'/>
+                 <Text style={styles.text3}>Sahana</Text>
                  <Text style={styles.text2}>Veg & Nonveg</Text>
                </View>
              </View>
@@ -42,15 +43,14 @@ export default class Hoteldetails extends Component
            <View style={styles.viewstylecontent1}>
            <Text style={styles.bottom}>Avg delivery time</Text> 
            <Text style={styles.bottom1}>Openning time </Text>    
-           <Text style={styles.bottom2}>Closing Time </Text>    
-                                    
+           <Text style={styles.bottom2}>Closing Time </Text>              
            </View>
            <ScrollableTabView
       //tabBarUnderlineColor="#37af0c"
       tabBarUnderlineStyle={{backgroundColor: "#37af0c"}}
       //tabBarBackgroundColor ="#232d36"
       tabBarActiveTextColor="#37af0c"
-      tabBarInactiveTextColor='white'
+      tabBarInactiveTextColor='grey'
       >
       
        <Cusine tabLabel="Cusine" {...this.props} />
@@ -142,7 +142,7 @@ export default class Hoteldetails extends Component
         borderRadius:10,
         paddingLeft:6,
         marginRight:8,
-        marginTop:8,
+        marginTop:110,
        },
        text1:{
         color:'white',
@@ -151,25 +151,31 @@ export default class Hoteldetails extends Component
       resname:{
         position:'absolute',
         color:'white',
-        marginTop:90,
+        marginTop:125,
         marginLeft:10,
     
       },
       text2:{
         color:'white',
+        fontSize:10,
+      },
+      text3:{
+        color:'white',
+        fontSize:20,
       },
       viewstylecontent:{
        flexDirection:'row',
-       backgroundColor:'#282a36',
-       borderBottomWidth:1,
-       borderBottomLeftRadius:10,
-       borderBottomRightRadius:10,
+       //backgroundColor:'#282a36',
+       //borderBottomWidth:1,
+       //borderBottomLeftRadius:10,
+       //borderBottomRightRadius:10,
        marginLeft:11,
        marginRight:11,
        marginTop:-1,
        paddingTop:5,
        paddingLeft:5,
        height:50,
+       padding:25
       },
       baseText:{
         color:'white',
@@ -220,7 +226,12 @@ export default class Hoteldetails extends Component
         fontSize:10,
         paddingTop:5,
         paddingLeft:40,
-       }
+       },
+       cart:{
+        marginLeft:350,
+        marginTop:-125,
+        flex:1,
+      },
       });
  
     module.exports =Hoteldetails
