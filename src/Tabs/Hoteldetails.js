@@ -160,6 +160,7 @@ export default class Hoteldetails extends Component
       },
       viewstylecontent:{
        flexDirection:'row',
+       justifyContent:'space-around',
        backgroundColor:'#282a36',
        borderBottomWidth:1,
        borderBottomLeftRadius:10,
@@ -191,6 +192,7 @@ export default class Hoteldetails extends Component
          paddingLeft:50,
         },
         viewstylecontent1:{
+        justifyContent:'space-around',
         flexDirection:'row',
         marginLeft:11,
         marginRight:11,
